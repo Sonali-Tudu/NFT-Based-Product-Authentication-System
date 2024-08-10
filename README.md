@@ -1,3 +1,3 @@
 # NFT-Based-Product-Authentication-System
 
-![A product's Supply Chain Journey](Product-journey.png)
+![A product's Supply Chain Journey](journey of a product.png)
