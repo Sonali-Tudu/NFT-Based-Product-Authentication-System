@@ -1,38 +1,70 @@
-# NFT-Based-Product-Authentication-System
+# Getting Started with Create React App
 
-![A product's Supply Chain Journey](journey_of_a_product.png)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Project Overview
-Consumers usually prefers the product with cheaper price given the product has an acceptable quality. Using this insight, scammers or even the factory with the knowledge of producing the same type of product will try to produce a counterfeit product trying to achieve a lower price than the market to gain sales. Hence we proposed a project titled "NFT-Based Product Authentication System" which is a decentralized application (dApp) designed to ensure the authenticity of pharmaceutical products in their supply chain using Non-Fungible Tokens (NFTs). Each product is linked to a unique NFT stored on a blockchain, allowing consumers and businesses to verify the authenticity and ownership of products. This system aims to combat counterfeit goods and provide a transparent method for product verification.
+## Available Scripts
 
+In the project directory, you can run:
 
-## Highlights
-- An NFT token is created out of the product's details which is then splitted into an Essential Share(ES) and many Non-Essential Shares(NES) to be distributed to the different members of the supply chain.
-- The ES is shared with the Manufacturer and the NES's are shared with the rest of the supply chain members.
-- The ES is converted to a QR Code which is pasted on the product.
-- For verification, the QR code is scanned by rest of the members of the supply chain and a linking is done with the ES on the product with the NES they have received personally.
-- If they have given the correct NES the product is verified and moved forward.
-- Towards the last till the customer, the timestamp and location is marked which can be checked by the customer when he/she scans the QR code on the product.
-- If the product is fake at any stage then the supply process is stopped there itself and the product is announced fake.
+### `npm start`
 
-## STAGE A (MANUFACTURER)
-- The manufacturer will signup into our website after which he will be asked to sign in.
-- After the sign in process is validated, he will be shared with a PRIVATE SHARE for two-factor authentication through which he can proceed to the next phase.
-- The manufacturer will then be redirected to the company registration page.
-- He chooses between 'Registered' or 'Not Registered.' If not, he needs to add company details first; otherwise, he can proceed to add product details.
-- On clicking the upload button, the product details will be submitted back to the backend.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## STAGE B (DISTRIBUTOR, RETAILER, WHOLESALER)
-- They will  also signup into our website after which they will be asked to sign in.
-- After the sign in process is validated, they too will be shared with a PRIVATE SHARE for two-factor authentication through which they can proceed to the next phase.
-- These recipients will then scan the QR and then they will be redirected to a page where they will have to put the NES.
-- They will receive their respective NES in their respective Knuct wallet-chat sent by their manufacturer.
-- The NES put will be recombined with ES associated to the QR to check the product’s authenticity.
-- If the combination matches, a verified page will be shown with the existing product history made of product id and timestamp at which the product was successfully authenticated.
-- If the combination doesn’t match, the process will stop there itself and the fake product is identified.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## STAGE C (CONSUMER)
-- The consumer can scan the QR code to access  the history of the product in the supply chain alongwith with location and timestamp details at each stage.
+### `npm test`
 
-## Contributing
-Contributions are welcome! If you have suggestions or improvements, please create a pull request or open an issue.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
